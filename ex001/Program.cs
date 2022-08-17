@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Введите элементы: ");
+﻿Console.WriteLine("Введите элементы через пробел: ");
 
 int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);  // не помню как изменить ошибку с Null в 
                                                                       // console readline, поэтому программа не всегда срабатывает
@@ -11,6 +11,5 @@ for (int i = 0; i < arr.Length; i++)
         count++;
     }
 }
-
 
 Console.WriteLine($"Кол-во элементов больше нуля: {count}");
